@@ -84,18 +84,12 @@
 
 ## Установка
 
-1. Склонируйте репозиторий:
-   ```bash
-   git clone https://github.com/ваш-логин/ваш-репозиторий.git
-   cd ваш-репозиторий
-   ```
-
-2. Установите зависимости с помощью Poetry:
+1. Установите зависимости с помощью Poetry:
    ```bash
    poetry install
    ```
 
-3. Активируйте виртуальное окружение:
+2. Активируйте виртуальное окружение:
    ```bash
    poetry shell
    ```
@@ -106,4 +100,4 @@
 
 ```bash
 poetry run pytest -vv --showlocals --strict ./tests/test_homework_2.py
-```
+``
