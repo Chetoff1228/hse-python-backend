@@ -1,17 +1,19 @@
-import pytest
+from datetime import datetime
 from http import HTTPStatus
+
+import pytest
 from fastapi import FastAPI, HTTPException
+from fastapi.security import HTTPBasicCredentials
+from starlette.requests import Request
+
 from lecture_4.demo_service.api.utils import (
     initialize,
-    user_service,
-    requires_author,
     requires_admin,
+    requires_author,
+    user_service,
     value_error_handler,
 )
-from lecture_4.demo_service.core.users import UserService, UserInfo, UserRole
-from fastapi.security import HTTPBasicCredentials
-from datetime import datetime
-from starlette.requests import Request
+from lecture_4.demo_service.core.users import UserInfo, UserRole, UserService
 
 
 @pytest.fixture
