@@ -98,6 +98,7 @@
 
 Для запуска тестов используйте следующую команду:
 
+
 ```bash
 poetry run pytest -vv --showlocals --strict ./tests/test_homework_2.py
 ``
